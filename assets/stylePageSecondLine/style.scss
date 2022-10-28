@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "../fonts/font/stylesheet.css";
+
+@mixin fontFam {
+    font-family: 'Gilroy', 'sans serif';
+    font-style: normal;
+}
+
+@mixin hLower-desktop {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.second-line-container {
+    background-image: url(../images/bg_second_line.png);
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.second-line__wrapper {
+    width: 50%;
+    margin: 0 auto 6vh auto;
+    padding-top: 15vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.second-line__title {
+    @include hLower-desktop;
+    @include fontFam;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+
+    padding-bottom: 2.7vh;
+}
+
+.second-line__subtitle {
+    @include fontFam;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.second-line-content {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 14.2vh;
+}
+
+.second-line__card {
+    @include fontFam;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+
+    text-align: center;
+    width: 26vw;
+    padding: 2.7vh;
+}
+.second-line__card p {
+    padding-top: 2vh;
+}
+.third-line__wrapper {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-line__list {
+    margin: 12vh auto 6vh auto;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third-line__title {
+    @include hLower-desktop;
+    @include fontFam;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+
+    padding-bottom: 2.7vh;
+}
+
+.third-line__title-blue {
+    color: rgba(46, 154, 219, 1);
+}
+
+.third-line__subtitle {
+    @include fontFam;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(147, 147, 147, 1);
+}
