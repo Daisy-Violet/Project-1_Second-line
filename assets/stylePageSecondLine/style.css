@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  src: local("Gilroy"), url("../stylePageSecondLine/fonts/font/Gilroy-Regular.woff2") format("woff2"), url("../stylePageSecondLine/fonts/font/Gilroy-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: bold;
+  src: local("Gilroy"), url("../stylePageSecondLine/fonts/font/Gilroy-Black.woff2") format("woff2"), url("../stylePageSecondLine/fonts/font/Gilroy-Black.woff") format("woff");
+}
 .second-line-container {
   background-image: url(../images/bg_second_line.png);
   padding: 0%;
