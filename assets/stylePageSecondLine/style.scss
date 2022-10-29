@@ -22,7 +22,14 @@
          url("../stylePageSecondLine/fonts/font/Gilroy-Black.woff2") format("woff2"),
          url("../stylePageSecondLine/fonts/font/Gilroy-Black.woff") format("woff");
   }
-
+  @font-face {
+    font-family: "Gilroy";
+    font-weight: medium;
+  
+    src: local("Gilroy"),
+         url("../stylePageSecondLine/fonts/font/Gilroy-Medium.woff2") format("woff2"),
+         url("../stylePageSecondLine/fonts/font/Gilroy-Medium.woff") format("woff");
+  }
 @mixin fontFam {
     font-family: 'Gilroy', 'sans serif';
     font-style: normal;
@@ -47,7 +54,7 @@
 }
 
 .second-line__wrapper {
-    width: 50%;
+    width: 46%;
     margin: 0 auto 6vh auto;
     padding-top: 15vh;
     text-align: center;
@@ -87,17 +94,16 @@
 }
 
 .second-line__card {
-    @include fontFam;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: rgba(255, 255, 255, 1);
-
     text-align: center;
     width: 26vw;
     padding: 2.7vh;
 }
 .second-line__card p {
+    @include fontFam;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
     padding-top: 2vh;
 }
 .third-line__wrapper {
