@@ -79,6 +79,10 @@
   padding: 2.7vh;
 }
 
+.second-line__card img {
+  max-width: 100%;
+}
+
 .second-line__card p {
   font-family: "Gilroy", "sans serif";
   font-style: normal;
@@ -99,12 +103,17 @@
 }
 
 .third-line__list {
-  margin: 12vh auto 6vh auto;
+  margin: 12vh auto 6vh;
   width: 65%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.third-line__list img {
+  max-width: 100%;
 }
 
 .third-line__title {
