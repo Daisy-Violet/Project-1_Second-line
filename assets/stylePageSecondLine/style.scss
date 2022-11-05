@@ -105,8 +105,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 @media screen and (min-width: 768px) {
 .second-line-container {
@@ -157,8 +155,20 @@
     line-height: 24px;
 }
 .third-line__list {
-    width: 65%;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
 }
+.third-line__list img {
+    margin-left: 1.4vw;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .third-line__list {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 767px) {
     .second-line-container {
@@ -212,6 +222,8 @@
     }
     .third-line__list {
         width: 85%;
+        justify-content: space-around;
+        align-items: center;
     }
     .third-line__list img {
         width: 35%;
